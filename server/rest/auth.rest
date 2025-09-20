@@ -1,0 +1,22 @@
+@baseUrl = http://localhost:4000
+
+### Signup
+POST {{baseUrl}}/auth/signup
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "email": "alice@example.com",
+  "password": "Passw0rd!",
+  "phone": "1234567890",
+  "address": "123 Main St"
+}
+
+### Login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "alice@example.com",
+  "password": "Passw0rd!"
+}

@@ -1,0 +1,6 @@
+@baseUrl = http://localhost:4000
+@token = PASTE_JWT_TOKEN_HERE
+
+### Me
+GET {{baseUrl}}/api/me
+Authorization: Bearer {{token}}
