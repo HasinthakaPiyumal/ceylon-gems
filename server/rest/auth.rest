@@ -5,11 +5,12 @@ POST {{baseUrl}}/auth/signup
 Content-Type: application/json
 
 {
-  "name": "Alice",
-  "email": "alice@example.com",
-  "password": "Passw0rd!",
-  "phone": "1234567890",
-  "address": "123 Main St"
+  "name": "Hasinthaka Admin",
+  "email": "hasi@ceylongems.com",
+  "password": "12341234",
+  "phone": "1234527890",
+  "address": "123 Main St",
+  "role":"ADMIN"
 }
 
 ### Login

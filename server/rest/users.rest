@@ -1,0 +1,6 @@
+@baseUrl = http://localhost:4000
+@token =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc1ODQ3OTM2NSwiZXhwIjoxNzU5MDg0MTY1fQ.9X9ePBWSM2w4gwmYEGnlQR95SjLN30HGinzZ1h8kPq8
+
+### Delete all users (ADMIN only)
+DELETE {{baseUrl}}/api/users
+Authorization: Bearer {{token}}

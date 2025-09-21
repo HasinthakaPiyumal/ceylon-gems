@@ -26,24 +26,26 @@ A modern React TypeScript application for Ceylon Gems e-commerce platform.
 ## Getting Started
 
 1. **Install dependencies**:
+
    ```bash
    npm install
    ```
 
 2. **Start development server**:
+
    ```bash
    npm run dev
    ```
 
 3. **Access the application**:
-   Open http://localhost:5174 in your browser
+   Open http://localhost:5175 in your browser
 
 ## API Endpoints
 
-The frontend expects the following backend endpoints:
+The frontend connects to backend on `http://localhost:4000` and expects:
 
+- `POST /auth/signup` - User registration
 - `POST /auth/login` - User login
-- `POST /auth/signup` - User registration  
 - `GET /auth/me` - Get user profile
 
 ## Routes
@@ -56,6 +58,7 @@ The frontend expects the following backend endpoints:
 ## Development
 
 The application is configured with:
+
 - ESLint for code linting
 - TypeScript for type safety
 - Hot module replacement for fast development

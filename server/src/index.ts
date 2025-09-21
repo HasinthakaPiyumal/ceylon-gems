@@ -4,6 +4,8 @@ import morgan from "morgan";
 import { env } from "./config/env";
 import authRouter from "./routes/auth";
 import protectedRouter from "./routes/protected";
+import gemsRouter from "./routes/gems";
+import usersRouter from "./routes/users";
 
 const app = express();
 
@@ -17,6 +19,8 @@ app.get("/health", (_req, res) => {
 
 app.use("/auth", authRouter);
 app.use("/api", protectedRouter);
+app.use("/api/gems", gemsRouter);
+app.use("/api/users", usersRouter);
 
 app.listen(env.port, () => {
   console.log(`server listening on http://localhost:${env.port}`);

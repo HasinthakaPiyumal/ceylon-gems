@@ -1,16 +1,15 @@
 import { Navigate } from "react-router-dom"
-import { useSelector } from "react-redux"
-import type { RootState } from "@/store"
 import type { ReactNode } from "react"
+import { useAppSelector } from "@/hooks/redux"
 
 interface ProtectedRouteProps {
-  children: ReactNode
+    children: ReactNode
 }
 
 const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
-  const { isAuthenticated } = useSelector((state: RootState) => state.auth)
+    const { isAuthenticated } = useAppSelector((state) => state.auth)
 
-  return isAuthenticated ? <>{children}</> : <Navigate to="/login" replace />
+    return isAuthenticated ? <>{children}</> : <Navigate to="/login" replace />
 }
 
 export default ProtectedRoute
